@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>sensations to share</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+</style>
+
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('SFONDO SITO 1.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+
+
+
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('TimeLine').style.display='block'" class="w3-button w3-black">TimeLine</button></p>
+    <p><button onclick="document.getElementById('Classes').style.display='block'" class="w3-button w3-black">Classes</button></p>
+    <p><button onclick="document.getElementById('Sign Up').style.display='block'" class="w3-button w3-black">Sign Up</button></p>
+
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">Monday 17:30-21| Wednesday 17:30-21| Friday 17:30-22</p>
+    <p class="w3-large">Corso Sempione 91, Enterprise Hotel, Milan</p>
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="TimeLine" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('TimeLine').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Chroma Yoga</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Monday, Yellow class <b>17:30-18:30</b></h5>
+      <h5>Wednesday, Red class <b>17:30-18:30</b></h5>
+      <h5>Friday, Blue class <b>17:30-18:30</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>HappyHour</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Monday and Wednesday <b>18:45-21</b></h5>
+      <h5>Friday <b>18:45-22</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Prices</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Chroma Yoga <b>€18.00</b></h5>
+      <h5>Chroma Yoga and HappyHour <b>€30.00</b></h5>
+    </div>
+  </div>
+</div>
+
+<div id="Classes" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('Classes').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>YELLOW</h1>
+    </div>
+    <div class="w3-container">
+      <h5>A flowing class where breath is linked with movement and used to wake up the body and increase energy. Yellow light is used
+         in conjunction with twists and opening postures to aid digestion and alleviate mood swings.
+         This open class is suitable for all levels. </h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>RED</h1>
+    </div>
+    <div class="w3-container">
+      <h5>A strong, powerful, dynamic class based on the energy giving properties of red light.
+Focusing on strength, flexibility and core, Red will give you the power you need to challenge yourself whilst benefiting from increased circulation, a faster metabolism and improved mood and sleep.
+These classes are open to intermediate level so it is advised that you have a good knowledge of yoga before attending. </h5>
+
+    </div>
+    <div class="w3-container w3-black">
+      <h1>BLUE</h1>
+    </div>
+    <div class="w3-container">
+      <h5>A dynamic flowing class where breath is linked with movement and used to wake up the body and increase energy. Blue light is the all mighty controller of our sleep cycles and can help with boosting productivity and alleviating mood swings. These classes are great if you find it hard to wake up in the mornings or suffer from afternoon energy dips.
+This open class is suitable for all levels. </h5>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Contact Modal -->
+<div id="Sign Up" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('Sign Up').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Sign Up</h1>
+    </div>
+    <div class="w3-container">
+      <p>Reserve a class:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-02-06T18:30"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p><button class="w3-button" type="submit">BOOK</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
